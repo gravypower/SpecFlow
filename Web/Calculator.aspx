@@ -9,5 +9,5 @@
     </asp:Panel>
     <asp:Button runat="server" ID="butAddNumbers" Text="Add Numbers" OnClick="butAddNumbers_Click"/>
     <asp:Label runat="server" ID="lblResult"></asp:Label>
-    <asp:Label runat="server" ID="lblErrorMessage"></asp:Label>
+    <asp:Label runat="server" ID="lblErrorMessage" CssClass="error"></asp:Label>
 </asp:Content>

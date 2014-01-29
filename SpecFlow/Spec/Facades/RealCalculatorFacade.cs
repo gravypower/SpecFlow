@@ -1,12 +1,12 @@
 ﻿using Calculator;
 
-namespace Tests.Spec.Drivers
+namespace Tests.Spec.Facades
 {
-    public class RealCalculatorDriver : ICalculatorDriver
+    public class RealCalculatorFacade : ICalculatorFacade
     {
         public RealCalculator Calculator { get; set; }
 
-        public RealCalculatorDriver()
+        public RealCalculatorFacade()
         {
             Calculator = new RealCalculator();
         }

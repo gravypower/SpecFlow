@@ -26,7 +26,7 @@ namespace Tests.Spec
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
         
-#line 1 "CalculatorIntergration.feature"
+#line 1 "WebCalculator.feature"
 #line hidden
         
         [NUnit.Framework.TestFixtureSetUpAttribute()]
@@ -134,7 +134,7 @@ this.ScenarioSetup(scenarioInfo);
 #line 26
  testRunner.When("I press add", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 27
- testRunner.Then("the user is presented with an error message", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("the user is presented with an message with error class applyed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

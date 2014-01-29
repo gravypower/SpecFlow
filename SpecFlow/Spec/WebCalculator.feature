@@ -24,5 +24,7 @@ Scenario: Add three numbers
 
 Scenario: Add no numbers
 	When I press add
-	Then the user is presented with an error message
+	Then the user is presented with an message with error class applyed
+
+
 

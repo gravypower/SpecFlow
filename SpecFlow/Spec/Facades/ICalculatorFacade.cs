@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace Tests.Spec.Drivers
+namespace Tests.Spec.Facades
 {
-    public interface ICalculatorDriver : IDisposable
+    public interface ICalculatorFacade : IDisposable
     {
         void AddNumber(int number);
 
