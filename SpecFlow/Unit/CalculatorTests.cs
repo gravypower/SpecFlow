@@ -13,6 +13,7 @@ namespace Tests.Unit
         {
             _sut = Substitute.For<Calculator.Calculator>();
         }
+
         [Test]
         public void AddingNoNumbersNoNumbersExceptionThrown()
         {

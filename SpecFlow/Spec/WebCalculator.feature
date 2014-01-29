@@ -4,6 +4,10 @@ Feature: WebCalculator
 	As a math idiot
 	I want to be told the sum of numbers
 
+Scenario: Add no numbers
+	When I press add
+	Then the user is presented with an message with error class applyed
+
 Scenario: Add one number
 	Given I have entered 50 into the calculator
 	When I press add
@@ -20,11 +24,5 @@ Scenario: Add three numbers
 	And I have entered 70 into the calculator
 	And I have entered 10 into the calculator
 	When I press add
-	Then the result should be 130 on the screen
-
-Scenario: Add no numbers
-	When I press add
-	Then the user is presented with an message with error class applyed
-
 
 

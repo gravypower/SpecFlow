@@ -12,7 +12,7 @@ namespace Tests.Spec.Facades
 
         private IWebElement _currentTextBox;
 
-        public WebCalculatorFacade():base(new ChromeDriver())
+        public WebCalculatorFacade()
         {
             WebDriver.Navigate().GoToUrl("http://SpecFlow/Calculator");
             Calculator = new Web.Calculator();

@@ -1,5 +1,7 @@
 ﻿using System;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.PhantomJS;
 using OpenQA.Selenium.Support.UI;
 
 namespace Tests.Spec.Pages
@@ -8,9 +10,13 @@ namespace Tests.Spec.Pages
     {
         public IWebDriver WebDriver { get; set; }
 
-        protected Page(IWebDriver webDriver)
+        protected Page()
         {
-            WebDriver = webDriver;
+#if DEBUG
+            WebDriver = new PhantomJSDriver();
+#else
+            WebDriver = new ChromeDriver();
+#endif
         }
 
         protected IWebElement GetControl(string clientId)

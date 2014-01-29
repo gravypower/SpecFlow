@@ -5,7 +5,7 @@ using Tests.Spec.Facades;
 namespace Tests.Spec.Steps
 {
     [Binding]
-    public class WebCalculatorSteps : BaseCalculatorSteps
+    public class WebCalculatorSteps : Steps
     {
         protected WebCalculatorFacade WebCalculatorFacade
         {
