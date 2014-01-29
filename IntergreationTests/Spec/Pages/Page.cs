@@ -1,10 +1,9 @@
 ﻿using System;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.PhantomJS;
 using OpenQA.Selenium.Support.UI;
 
-namespace Tests.Spec.Pages
+namespace IntergreationTests.Spec.Pages
 {
     public abstract class Page
     {
@@ -13,7 +12,7 @@ namespace Tests.Spec.Pages
         protected Page()
         {
 #if DEBUG
-            WebDriver = new PhantomJSDriver();
+            WebDriver = new PhantomJSDriver(@"C:\Apps\phantomjs-1.9.7-windows");
 #else
             WebDriver = new ChromeDriver();
 #endif

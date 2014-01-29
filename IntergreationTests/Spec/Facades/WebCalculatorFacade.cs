@@ -1,10 +1,10 @@
 ﻿using System.Globalization;
+using IntergreationTests.Spec.Pages;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
-using Tests.Spec.Pages;
+using Tests.Spec.Facades;
 using Web;
 
-namespace Tests.Spec.Facades
+namespace IntergreationTests.Spec.Facades
 {
     public class WebCalculatorFacade : Page, ICalculatorFacade
     {
@@ -15,7 +15,7 @@ namespace Tests.Spec.Facades
         public WebCalculatorFacade()
         {
             WebDriver.Navigate().GoToUrl("http://SpecFlow/Calculator");
-            Calculator = new Web.Calculator();
+            Calculator = new Calculator();
             _currentTextBox = GetControl(Calculator.FirstTextBoxClientId);
 
         }

@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator", "Calculator\Ca
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web", "Web\Web.csproj", "{7B4A7AFA-F4B9-449D-8CF8-D0666AA748E7}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{8DEB89CB-7171-4F61-981D-E256F8B54C68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntergreationTests", "IntergreationTests\IntergreationTests.csproj", "{5B52EA60-3136-4083-915A-B324585661FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,8 +31,16 @@ Global
 		{7B4A7AFA-F4B9-449D-8CF8-D0666AA748E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B4A7AFA-F4B9-449D-8CF8-D0666AA748E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B4A7AFA-F4B9-449D-8CF8-D0666AA748E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B52EA60-3136-4083-915A-B324585661FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B52EA60-3136-4083-915A-B324585661FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B52EA60-3136-4083-915A-B324585661FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B52EA60-3136-4083-915A-B324585661FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DEBD1C43-E792-4BC6-9B70-2C21B78F0569} = {8DEB89CB-7171-4F61-981D-E256F8B54C68}
+		{5B52EA60-3136-4083-915A-B324585661FD} = {8DEB89CB-7171-4F61-981D-E256F8B54C68}
 	EndGlobalSection
 EndGlobal

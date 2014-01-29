@@ -1,11 +1,11 @@
-﻿using NUnit.Framework;
+﻿using IntergreationTests.Spec.Facades;
+using NUnit.Framework;
 using TechTalk.SpecFlow;
-using Tests.Spec.Facades;
 
-namespace Tests.Spec.Steps
+namespace IntergreationTests.Spec.Steps
 {
     [Binding]
-    public class WebCalculatorSteps : Steps
+    public class WebCalculatorSteps : Tests.Spec.Steps.Steps
     {
         protected WebCalculatorFacade WebCalculatorFacade
         {

@@ -11,7 +11,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace Tests.Spec
+namespace IntergreationTests.Spec
 {
     using TechTalk.SpecFlow;
     
